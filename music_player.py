@@ -59,3 +59,21 @@ while True:
     if synth_f_btn.is_pressed:
         GPIO.output(25,GPIO.HIGH)
         time.sleep(sleepTime)
+        
+    synth_g_btn.when_pressed = synth_g.play
+    if synth_g_btn.is_pressed:
+        GPIO.output(8,GPIO.HIGH)
+        time.sleep(sleepTime)
+        GPIO.output(8,GPIO.LOW)
+
+    synth_a_btn.when_pressed = synth_a.play
+    if synth_a_btn.is_pressed:
+        GPIO.output(7,GPIO.HIGH)
+        time.sleep(sleepTime)
+        GPIO.output(7,GPIO.LOW)
+
+    synth_b_btn.when_pressed = synth_b.play
+    if synth_b_btn.is_pressed:
+        GPIO.output(6,GPIO.HIGH)
+        time.sleep(sleepTime)
+        GPIO.output(6,GPIO.LOW)
